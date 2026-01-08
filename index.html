@@ -61,7 +61,18 @@
   </section>
 
 </main>
+<!-- Footer -->
+<footer class="footer">
+  <p>Last updated: <span id="lastUpdated"></span></p>
+</footer>
+
 
 <script src="script.js"></script>
+<script>
+  document.getElementById("lastUpdated").innerText =
+    new Date().toLocaleString();
+</script>
+
+
 </body>
 </html>
