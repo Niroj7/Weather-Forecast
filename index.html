@@ -4,31 +4,51 @@
   
   <meta charset="UTF-8" />
   <title>Weather Dashboard</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="stylesheet" href="style.css" />
 </head>
+
 <body class="default">
 
-<div id="particles"></div>
+<!-- Background animation -->
+<div id="particles" aria-hidden="true"></div>
 
-<div class="container">
-  <h1>🌦 Weather Dashboard</h1>
-  <p class="subtitle">Live Weather • Forecasts • Animations</p>
+<main class="container">
 
-  <div class="search">
-    <input id="searchInput" placeholder="Search city (e.g. Perth)" />
-    <button onclick="searchCity()">Search</button>
-  </div>
+  <!-- Header -->
+  <header>
+    <h1>🌦 Weather Dashboard</h1>
+    <p class="subtitle">Live Weather • Forecasts • Animations</p>
+  </header>
+
+  <!-- Search -->
+  <section class="search" aria-label="City search">
+    <label for="searchInput" class="visually-hidden">Search city</label>
+    <input
+      id="searchInput"
+      type="text"
+      placeholder="Search city (e.g. Perth)"
+      autocomplete="off"
+      aria-label="City name"
+    />
+    <button type="button" onclick="searchCity()">Search</button>
+  </section>
 
   <!-- MAIN WEATHER -->
-  <section id="mainWeather" class="hidden"></section>
+  <section
+    id="mainWeather"
+    class="hidden"
+    aria-live="polite"
+    aria-label="Current weather"
+  ></section>
 
-  <!-- 24 HOURS -->
+  <!-- 24 HOURS FORECAST -->
   <section id="hourlySection" class="hidden">
     <h2>⏰ Next 24 Hours</h2>
     <div id="hourly" class="grid"></div>
   </section>
 
-  <!-- 5 DAY -->
+  <!-- 5 DAY FORECAST -->
   <section id="dailySection" class="hidden">
     <h2>📅 5-Day Forecast</h2>
     <div id="daily" class="grid"></div>
@@ -39,7 +59,8 @@
     <h2>🇺🇸 Major US Cities</h2>
     <div id="majorCities" class="grid"></div>
   </section>
-</div>
+
+</main>
 
 <script src="script.js"></script>
 </body>
