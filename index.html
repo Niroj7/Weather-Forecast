@@ -1,15 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  
   <meta charset="UTF-8" />
-
   <title>Weather Dashboard</title>
-  <meta name="description" content="Interactive weather dashboard with live forecasts, hourly trends, and major city weather updates." />
-<meta name="keywords" content="weather app, forecast dashboard, JavaScript weather, API project" />
-<meta name="theme-color" content="#0d47a1" />
 
+  <!-- SEO & App Metadata -->
+  <meta name="description" content="Interactive weather dashboard with live forecasts, hourly trends, and major city weather updates." />
+  <meta name="keywords" content="weather app, forecast dashboard, JavaScript weather, API project" />
+  <meta name="theme-color" content="#0d47a1" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
   <link rel="stylesheet" href="style.css" />
 </head>
 
@@ -66,18 +66,28 @@
   </section>
 
 </main>
+
 <!-- Footer -->
 <footer class="footer">
   <p>Last updated: <span id="lastUpdated"></span></p>
 </footer>
 
-
+<!-- Main JS -->
 <script src="script.js"></script>
+
+<!-- Small UX Enhancements -->
 <script>
+  // Update footer timestamp
   document.getElementById("lastUpdated").innerText =
     new Date().toLocaleString();
-</script>
 
+  // Allow Enter key to trigger search
+  document.getElementById("searchInput").addEventListener("keydown", function (e) {
+    if (e.key === "Enter") {
+      searchCity();
+    }
+  });
+</script>
 
 </body>
 </html>
