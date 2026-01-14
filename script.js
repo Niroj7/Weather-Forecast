@@ -1,4 +1,4 @@
-const API_KEY = "f3e32c407f677be15f15b712b65fec31";
+const API_KEY = "
 
 const majorCities = ["New York", "Los Angeles", "Chicago", "Houston", "Seattle"];
 
