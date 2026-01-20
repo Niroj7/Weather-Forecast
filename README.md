@@ -7,7 +7,7 @@ A real-time weather dashboard built using the **OpenWeatherMap REST API** that d
 - Dynamic UI themes based on weather & day/night
 - Animated weather effects (rain, snow, clouds, sun)
 
----
+--------
 
 ## 🚀 Features
 - 🌍 Search weather by city name
