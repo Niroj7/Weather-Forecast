@@ -25,7 +25,7 @@ A real-time weather dashboard built using the **OpenWeatherMap REST API** that d
 - JavaScript (ES6)
 - OpenWeatherMap API
 - LocalStorage
-
+-----
 ---
 
 ## 📌 Status
