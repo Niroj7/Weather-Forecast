@@ -3,7 +3,7 @@
 A real-time weather dashboard built using the **OpenWeatherMap REST API** that displays:
 - Current weather conditions
 - 24-hour hourly forecast
-- 5-day weather forecast
+- 5-day weather forecast.
 - Dynamic UI themes based on weather & day/night
 - Animated weather effects (rain, snow, clouds, sun)
 
